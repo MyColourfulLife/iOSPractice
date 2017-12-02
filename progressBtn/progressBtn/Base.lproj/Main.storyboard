@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43g-LK-2dz" customClass="ProgressView">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYJ-HM-ehF">
+                                        <rect key="frame" x="-5" y="-5" width="60" height="60"/>
+                                        <state key="normal" image="Play"/>
+                                        <connections>
+                                            <action selector="playAndPauseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8n-3E-fxS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43267400309999998" green="0.65876697539999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GYJ-HM-ehF" firstAttribute="leading" secondItem="43g-LK-2dz" secondAttribute="leading" constant="-5" id="7HH-WX-LK1"/>
+                                    <constraint firstAttribute="trailing" secondItem="GYJ-HM-ehF" secondAttribute="trailing" constant="-5" id="h6z-Ei-kqd"/>
+                                    <constraint firstItem="GYJ-HM-ehF" firstAttribute="top" secondItem="43g-LK-2dz" secondAttribute="top" constant="-5" id="qP0-Yr-heL"/>
+                                    <constraint firstAttribute="bottom" secondItem="GYJ-HM-ehF" secondAttribute="bottom" constant="-5" id="saI-ji-teG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="43g-LK-2dz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="288" id="4Ku-Ap-KFJ"/>
+                            <constraint firstItem="43g-LK-2dz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="ZXh-RG-QdF"/>
+                            <constraint firstItem="43g-LK-2dz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k5f-XP-yZh"/>
+                            <constraint firstItem="43g-LK-2dz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nJh-3y-kHH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playstop" destination="GYJ-HM-ehF" id="9UT-aE-LLd"/>
+                        <outlet property="progressView" destination="43g-LK-2dz" id="Jen-vy-WrG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Play" width="57" height="57"/>
+    </resources>
+</document>
