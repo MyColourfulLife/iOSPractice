@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fec-uZ-wFg">
+                                <rect key="frame" x="0.0" y="20" width="157" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="TqO-7C-H8s"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Si4-yg-4RS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7Yr-dp-v9j"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4no-aO-Hpk">
+                                <rect key="frame" x="157" y="20" width="218" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JyW-yC-3V8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hma-72-vKT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fec-uZ-wFg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Mp-N1-omy"/>
+                            <constraint firstItem="fec-uZ-wFg" firstAttribute="bottom" secondItem="4no-aO-Hpk" secondAttribute="bottom" id="1OV-fN-svd"/>
+                            <constraint firstItem="fec-uZ-wFg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4S2-CC-TEr"/>
+                            <constraint firstAttribute="trailing" secondItem="4no-aO-Hpk" secondAttribute="trailing" id="8Bg-YY-vMA"/>
+                            <constraint firstItem="fec-uZ-wFg" firstAttribute="top" secondItem="4no-aO-Hpk" secondAttribute="top" id="KwO-s8-b25"/>
+                            <constraint firstItem="4no-aO-Hpk" firstAttribute="leading" secondItem="fec-uZ-wFg" secondAttribute="trailing" id="k1f-ev-qDO"/>
+                            <constraint firstItem="fec-uZ-wFg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oPz-q3-kau"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftTabel" destination="fec-uZ-wFg" id="jw8-JN-vQk"/>
+                        <outlet property="rightTabel" destination="4no-aO-Hpk" id="cFi-ej-8P0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
